@@ -1,6 +1,6 @@
 # Online-Food-Diary
 
-Somewhat close to popular **Swiggy** etc but still diffrence in lot of functionalities ...
+Somewhat close to **_Zomato_** still far far away...
 
 This project is capable of getting a user’s reviewed hotels, restaurants and similar entities. Under this project user is capable of reviewing, providing feedback and rating different type of business. 
 
