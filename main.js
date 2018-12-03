@@ -20,7 +20,8 @@ foodieApp.config(function ($routeProvider) {    //$routeProvider is an object de
 
 foodieApp.controller('loginController',function($scope) {
 })
-
+var hoteldata = JSON.parse(localStorage.getItem('user'));
+	console.log(hoteldata);
 foodieApp.controller('mainController',function($scope) {
 	$scope.restaurants = [{
 													id: 1,
@@ -141,7 +142,9 @@ foodieApp.controller('mainController',function($scope) {
 												hours: '11 AM to 1 AM (Mon-Sun)',
 												email: 'uncleschineese@gmail.com',
 												image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk_TLf0yvTv4vaYBT93zC0a-HX7O2c7DzybqlMvpDbSfQxPXrxtA'
-										}]
+											},
+											hoteldata
+										]
 						});
 
 
@@ -158,6 +161,7 @@ foodieApp.controller('loginController',function($scope,$location) {
 foodieApp.controller('restaurantController',function($scope,$routeParams,$http) {
 	$scope.restaurantId = $routeParams.id;
 	$scope.ingredients = [];
+	
 	var restaurants = [{
 													id: 1,
 													name: 'Uncle"s Chinese',
