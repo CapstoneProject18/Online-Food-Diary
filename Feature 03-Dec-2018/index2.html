@@ -30,7 +30,8 @@
                 <form action="" class="form">
                   <div class="control-group">
                     <!-- <label for="first_name">Enter Hotel Name</label> -->
-                    <input type="text" name="first_name" placeholder="Enter Hotel Name" class="form-control">
+                    <input type="number" name="first_name" placeholder="Enter Id" class="form-control" pattern="[0-9]{1,5}" required>
+                    <!-- <input type="tel" class="form-control mb-3" placeholder="Phone" required pattern="[0-9]{10,12}" title="Enter only Digits from 0-9"> -->
                     <br>
                     <!-- <label for="second_name">Enter Hotel Review</label> -->
                     <!-- <input type="text" name="second_name" placeholder="Enter your Review" class="form-control"> -->
@@ -38,6 +39,7 @@
                     <br>
                   </div>
                   <div>
+                    <!-- <input type="button" value="Submit your Review" class="submit btn btn-dark btn-block"> -->
                     <button class="submit btn btn-primary btn-block">Save</button>
                   </div>
                 </form>
