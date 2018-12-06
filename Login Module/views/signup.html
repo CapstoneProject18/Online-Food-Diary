@@ -11,15 +11,15 @@
 </head>
 <body>
 
-	<nav class="navbar navbar-expand-md bg-inverse navbar-light">
-  		<a class="navbar-brand" href="index.html">FoodTel</a>
+	<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+  		<a class="navbar-brand" href="index.html">MINERVA</a>
   		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     		<span class="navbar-toggler-icon"></span>
   		</button>
   		<div class="collapse navbar-collapse" id="collapsibleNavbar">
     		<ul class="navbar-nav ml-auto">
       			<li class="nav-item">
-        			<a class="nav-link" href="home.html">Home</a>
+        			<a class="nav-link" href="logout.html">Home</a>
       			</li>
       			<li class="nav-item">
         			<a class="nav-link" href="../index.html">Signin</a>
@@ -31,41 +31,35 @@
   		</div>  
 	</nav>
 	<div class="container wrap1">
-		<div class="row mt-5 pt-5">
+		<div class="row">
 			<div class="col-md-1"></div>
-			<div class="col-md-4 mt-5 pt-4" style="text-align:center">
-				<h1 id="welcometext"> <img src="http://cdn.onlinewebfonts.com/svg/img_19587.png" alt="FooTel Logo" style="margin-right:5px; width:50px; margin-top:-8px;">FooTel</h1>
-                <h2>Cooking <small>Gone</small> Wrong ?</h2>
-                <p style="font-size:14px;">Order <strong>Food</strong> from <strong>Favourite Resturants</strong> near <strong class="text-center">YOU</strong></p>
-                <!-- <h2>Ship high quality code.</h2> -->
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control border-dark rounded-0" placeholder="Enter your Location">
-                    <div class="input-group-append">
-                      <button type="button" class="input-group-text rounded-0 bg-dark border-dark" style="color: white;  font-weight:400;">Find Food / Hotel</i></button>
-                    </div>
-                </div>
-				<!-- <button class="btn btn-outline-dark rounded-0 tryminerva " onclick="redirectsignup()" >Signup now</button> -->
-            </div>
+			<div class="col-md-4 wrap1" style="text-align:right">
+				<h1 >MINERVA</h1>
+				<h3><small>Your Daily </small> Code Review Tool</h3>
+				<strong>MINERVA</strong> is a simple code review tool that makes the process work for your team.
+				<h2>Ship high quality code.</h2>
+				<button class="btn btn-outline-dark rounded-0 tryminerva " onclick="redirectlogin()">Try Minerva</button>
+			</div>
 			<div class="col-md-6 ">
-				<h2 class="text-center">Join Foodtel Today</h2>
-				<div class="None">
+				<h2 class="text-center">Join MINERVA Today</h2>
+				<div class="card">
     				<div class="form-group">
       					<label for="username"><strong>Username :</strong></label>
-      					<input type="text" class="form-control rounded-0 border-dark" id="txtusername" placeholder="Enter Username" name="username" required>
+      					<input type="text" class="form-control rounded-0 border-warning" id="txtusername" placeholder="Enter Username" name="username" required>
    					 </div>
     				<div class="form-group">
      					<label for="email"><strong>Email :</strong></label>
-      					<input type="email" class="form-control rounded-0 border-dark" id="txtemail" placeholder="Enter Email" name="email" required>
+      					<input type="email" class="form-control rounded-0 border-warning" id="txtemail" placeholder="Enter Email" name="email" required>
    					</div>
    					<div class="form-group">
      					<label for="pwd"><strong>Password :</strong></label>
-      					<input type="password" class="form-control rounded-0 border-dark" id="txtpassword" placeholder="Enter Password" name="pswd" required>
+      					<input type="password" class="form-control rounded-0 border-warning" id="txtpassword" placeholder="Enter Password" name="pswd" required>
    					</div>
    					<div class="form-check">
      					<label class="form-check-label">
        					<input class="form-check-input" type="checkbox" name="remember">By Signing in you agree to our T&C and Privacy Policy</label>
     				</div>
-    				<button type="submit" onclick="emailsignup()" class="btn btn-dark btn-block mt-2"><strong>Submit</strong></button>
+    				<button type="submit" onclick="emailsignup()" class="btn btn-warning btn-block"><strong>Submit</strong></button>
   				</div>
 			</div>
 			<div class="col-md-1"></div>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Start of Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-inverse">
+      <a class="navbar-brand" href="#"><h4>FooTel</h4></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+              <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+          </ul>
+      </div>
+    </nav>
+    <!-- End of Navigation bar  -->
+    <div class="container">
+        <div class="row mt-0">
+
+            <!-- User Dash Menu -->
+            <div class="col-sm-4 bg-default">
+                <h4 class="text-center pt-3 mb-3">User Data</h4>
+                <ul class="list-group">
+                    <li class="list-group-item  list-group-item-active pt-1 pb-1">
+                      <img src="https://www.sinteno.nl/wp-content/uploads/2018/01/IT-professional.png" alt="User Image" width="100%" height="50%">
+                    </li>
+                    <li class="list-group-item pt-1 pb-1">Name: Marcus Singh</li>
+                    <li class="list-group-item pt-1 pb-1">Username: Marcus@007</li>
+                    <li class="list-group-item pt-1 pb-1">Email: ******@gmail.com</li>
+                    <li class="list-group-item pt-1 pb-1">Country: Mahismati</li>
+                </ul>
+            </div> 
+            <!-- End of UserDash Board -->
+
+            <!-- Start of Add Feature part -->
+            <div class="col-sm-4 bg-light">
+                <h4 class="text-center mb-3 pt-3">Add Hotel Data</h4>
+                <form action="" method="post" class="form-group">
+                    <input type="text" name="id" id="hotel_name" placeholder="Enter Hotel ID" required class="form-control form-control-sm mb-3" required>
+                    <input type="text" name="hotel_name" id="hotel_name" placeholder="Hotel / Resturant Name" required class="form-control form-control-sm mb-3" required>
+                    <input type="text" name="address" id="address" placeholder="Address" required class="form-control form-control-sm mb-3" required>
+                    <input type="text" name="location" id="location" placeholder="Location" required class="form-control form-control-sm mb-3" required>
+                    <input type="text" name="category" id="category" placeholder="Category" required class="form-control form-control-sm mb-3" required>
+                    <input type="text" name="votes" id="votes" placeholder="Votes" required class="form-control form-control-sm mb-3" required>
+                    <input type="text" name="no_of_votes" id="no_of_votes" placeholder="No of Votes" required class="form-control form-control-sm mb-3" required>
+                    <input type="text" name="cuisines" id="cuisines" placeholder="Cuisines" required class="form-control form-control-sm mb-3" required>
+                    <input type="text" name="url" id="url" placeholder="Hotel url" required class="form-control form-control-sm mb-3" required>
+                    <input type="text" name="cost" id="cost" placeholder="Average Cost (For Two)" required class="form-control form-control-sm mb-3" required>
+                    <input type="text" name="working_hours" id="working_hours" placeholder="Working Hours" required class="form-control form-control-sm mb-3" required>
+                    <input type="text" name="email" id="email" placeholder="Email Address" required class="form-control form-control-sm mb-3" required>
+                    <input type="text" name="hotel_image" id="hotel_image" placeholder="Hote Image" required class="form-control form-control-sm mb-3" required>
+                    <input type="submit" value="Add Data" class="btn btn-block btn-dark btn-sm"/> 
+                </form>
+            </div> 
+      <!-- End of Add Feature part -->
+        </div>
+    </div>
+    
+</body>
+</html>
