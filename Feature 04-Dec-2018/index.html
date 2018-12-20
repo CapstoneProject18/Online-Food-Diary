@@ -1,87 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Review Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-    <!-- Brand/logo -->
-        <a class="navbar-brand" href="#">FooTel</a>
-        <!-- Links -->
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link 1</a>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link 2</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link 3</a>
-            </li>
-        </ul>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><h4>FooTel</h4></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
     </nav>
-    <div class="container-fluid mt-5">
-        <!-- <div class="row">
+
+    <div class="container">
+        <div class="row mt-5">
             <div class="col-sm-4"></div>
-            <form class="col-sm-6 col-md-4 card">
-                <form class="sucess-none" id="newContact">
-                    <br>
-                    <input type="text" name="" id="" class="form-control" placeholder="Something">
-                    <br>
-                    <textarea name="" id="" cols="30" rows="10" class="form-control" placeholder="Enter your Review"></textarea>
-                    <br>
-                    <input type="submit" value="Submit your Review" class="btn btn-block btn-dark">
-                    <br>
-                </form>
+            <div class="col-sm-4">
+                <div class="">
+                    <form action="" class="form-group">
+                        <br>
+                        <input type="text" class="form-control" placeholder="Enter Hotel Name">
+                        <br>
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Enter your Review" class="form-control"></textarea>
+                        <br>
+                        <input type="submit" value="Submit your Review" class="form-control btn-dark">
+                        <br>
+                    </form>
+                </div>
             </div>
             <div class="col-sm-4"></div>
-        </div> -->
-        
-        <form class="sucess-none" id="newContact">
-                <div class="inputs">
-                    <input type="text" value="" name="FNAME" class="required name" id="name" placeholder="Name:" style=" width: 35%; float: left; background: none; padding: 1.75em 2em; margin: 0; border-radius: .25em; box-shadow: none; border: none;">
-              
-                    <input type="email" value="" name="EMAIL" class="required email" id="email" placeholder="Email:" style=" width: 65%; float: left; background: none; padding: 1.75em 2em; margin: 0; border-radius: .25em; box-shadow: none; border: none;">
-                </div>
-                <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                    <input type="text" name="b_96d9e6e519173af7bdbdab9d_23138bd741" tabindex="-1" value="">
-                </div>
-                <input type="submit" class="btn" value="Submit" name="subscribe" id="submitContact">
-              </form>
-
+        </div>
     </div>
-    <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function() {
-    if ($('#newContact').length > 0 ) {
-        contactScript('forcontact');
-    }
-});
-//firebase
-function contactScript(value) {
-    var a = {
-    apiKey: "AIzaSyCbyObWiaXuqYcVk7H5QAsANoYY1xnYMDg",
-    authDomain: "foodtel-857f2.firebaseapp.com",
-    databaseURL: "https://foodtel-857f2.firebaseio.com",
-    projectId: "foodtel-857f2",
-    storageBucket: "foodtel-857f2.appspot.com",
-    messagingSenderId: "533408782485"
-  };
-  firebase.initializeApp(a);
-    var b = firebase.database().ref("messages");
-        $("#newContact").submit(function(a) { $(this), console.log("Submit to Firebase");
-        var c = $("#name").val(),
-            d = $("#email").val(),
-            f = { name: c, email: d};
-        return b.push(f).then(function(a) { 
-            $(".sucess").css("display", "block"), 
-            $(".sucess-none").css("display", "none") }), !1 })   
-}
-    </script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
 </body>
 </html>
