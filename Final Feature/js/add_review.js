@@ -43,7 +43,7 @@ ref.child('user-data').orderByChild('z_id').equalTo("1").on("value", function(sn
 
   
 
-/*
+
   // Test for the existence of certain keys within a DataSnapshot
   var ref = firebase.database().ref("foodtel-857f2/user-data");
   //console.log("ref:", ref);
@@ -78,4 +78,3 @@ ref.child('user-data').orderByChild('z_id').equalTo("1").on("value", function(sn
     //   var username = (snapshot.val() && snapshot.val().username) || 'Anonymous';
       // ...
     //});
-    */
